@@ -11,7 +11,7 @@ object ClientForm: TClientForm
   OnCreate = FormCreate
   OnDestroy = FormDestroy
   Position = poScreenCenter
-  LCLVersion = '1.8.2.0'
+  LCLVersion = '2.0.1.0'
   object SubscribeBtn: TButton
     Left = 207
     Height = 27
@@ -90,11 +90,11 @@ object ClientForm: TClientForm
         Columns = <        
           item
             Title.Caption = 'Topic'
-            Width = 202
+            Width = 203
           end        
           item
             Title.Caption = 'Data'
-            Width = 202
+            Width = 203
           end        
           item
             SizePriority = 0
@@ -115,8 +115,8 @@ object ClientForm: TClientForm
         RowCount = 1
         TabOrder = 0
         ColWidths = (
-          202
-          202
+          203
+          203
           100
           60
         )
@@ -209,7 +209,7 @@ object ClientForm: TClientForm
           item
             ReadOnly = True
             Title.Caption = 'Message'
-            Width = 365
+            Width = 367
           end>
         DefaultRowHeight = 18
         ExtendedSelect = False
@@ -220,7 +220,7 @@ object ClientForm: TClientForm
         ColWidths = (
           80
           120
-          365
+          367
         )
       end
     end
@@ -229,8 +229,8 @@ object ClientForm: TClientForm
     OnDisconnected = ClientDisconnected
     OnSendData = ClientSendData
     OnReceiveMessage = ClientReceiveMessage
-    left = 56
-    top = 248
+    Left = 56
+    Top = 248
   end
   object TCP: TLTCPComponent
     Port = 0
@@ -242,15 +242,15 @@ object ClientForm: TClientForm
     Timeout = 0
     ReuseAddress = False
     Session = SSL
-    left = 336
-    top = 248
+    Left = 336
+    Top = 248
   end
   object SSL: TLSSLSessionComponent
     CAFile = 'cert'
     KeyFile = 'pkey'
     Method = msTLSv1
     OnSSLConnect = SSLSSLConnect
-    left = 432
-    top = 249
+    Left = 432
+    Top = 249
   end
 end
