@@ -11,7 +11,6 @@ object ClientForm: TClientForm
   OnCreate = FormCreate
   OnDestroy = FormDestroy
   Position = poScreenCenter
-  LCLVersion = '2.0.1.0'
   object SubscribeBtn: TButton
     Left = 207
     Height = 27
@@ -59,8 +58,8 @@ object ClientForm: TClientForm
   end
   object StatusBar: TStatusBar
     Left = 0
-    Height = 19
-    Top = 338
+    Height = 23
+    Top = 334
     Width = 605
     Panels = <>
   end
@@ -90,11 +89,11 @@ object ClientForm: TClientForm
         Columns = <        
           item
             Title.Caption = 'Topic'
-            Width = 203
+            Width = 193
           end        
           item
             Title.Caption = 'Data'
-            Width = 203
+            Width = 193
           end        
           item
             SizePriority = 0
@@ -115,8 +114,8 @@ object ClientForm: TClientForm
         RowCount = 1
         TabOrder = 0
         ColWidths = (
-          203
-          203
+          193
+          193
           100
           60
         )
@@ -124,21 +123,21 @@ object ClientForm: TClientForm
     end
     object LogTab: TTabSheet
       Caption = 'Log'
-      ClientHeight = 243
-      ClientWidth = 567
+      ClientHeight = 246
+      ClientWidth = 569
       object LogToolbarPanel: TPanel
         Left = 0
         Height = 50
         Top = 0
-        Width = 567
+        Width = 569
         Align = alTop
         BevelOuter = bvNone
         ClientHeight = 50
-        ClientWidth = 567
+        ClientWidth = 569
         TabOrder = 0
         object FilterText: TEdit
           Left = 8
-          Height = 29
+          Height = 23
           Top = 9
           Width = 144
           OnExit = FilterTextExit
@@ -146,18 +145,18 @@ object ClientForm: TClientForm
         end
         object CBFiltered: TCheckBox
           Left = 160
-          Height = 23
+          Height = 19
           Top = 12
-          Width = 68
+          Width = 59
           Caption = 'Filtered'
           OnChange = CBFilteredChange
           TabOrder = 1
         end
         object CBEnabled: TCheckBox
           Left = 239
-          Height = 23
+          Height = 19
           Top = 12
-          Width = 71
+          Width = 62
           Caption = 'Enabled'
           Checked = True
           OnChange = CBEnabledChange
@@ -175,9 +174,9 @@ object ClientForm: TClientForm
         end
         object cbShowDebugMessages: TCheckBox
           Left = 320
-          Height = 23
+          Height = 19
           Top = 12
-          Width = 123
+          Width = 109
           Caption = 'Debug Messages'
           OnChange = cbShowDebugMessagesChange
           TabOrder = 4
@@ -185,9 +184,9 @@ object ClientForm: TClientForm
       end
       object LogGrid: TStringGrid
         Left = 0
-        Height = 193
+        Height = 196
         Top = 50
-        Width = 567
+        Width = 569
         Align = alClient
         AutoAdvance = aaNone
         AutoEdit = False
@@ -209,7 +208,7 @@ object ClientForm: TClientForm
           item
             ReadOnly = True
             Title.Caption = 'Message'
-            Width = 367
+            Width = 365
           end>
         DefaultRowHeight = 18
         ExtendedSelect = False
@@ -220,7 +219,7 @@ object ClientForm: TClientForm
         ColWidths = (
           80
           120
-          367
+          365
         )
       end
     end
@@ -241,7 +240,6 @@ object ClientForm: TClientForm
     OnCanSend = TCPCanSend
     Timeout = 0
     ReuseAddress = False
-    Session = SSL
     Left = 336
     Top = 248
   end

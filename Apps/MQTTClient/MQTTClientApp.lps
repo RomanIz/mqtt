@@ -18,8 +18,8 @@
         <ComponentName Value="ClientForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="2"/>
-        <TopLine Value="261"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
         <CursorPos X="21" Y="286"/>
         <UsageCount Value="70"/>
         <Bookmarks Count="1">
@@ -34,7 +34,7 @@
         <ComponentName Value="MQTTConnectDlg"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="2"/>
         <CursorPos X="32" Y="9"/>
         <UsageCount Value="70"/>
         <Loaded Value="True"/>
@@ -90,14 +90,14 @@
       <Unit9>
         <Filename Value="..\..\src\mqttclient.pas"/>
         <UnitName Value="MQTTClient"/>
-        <TopLine Value="615"/>
+        <TopLine Value="678"/>
         <CursorPos X="32" Y="626"/>
         <UsageCount Value="23"/>
         <Loaded Value="True"/>
       </Unit9>
       <Unit10>
         <Filename Value="..\..\src\mqttserver.pas"/>
-        <EditorIndex Value="10"/>
+        <EditorIndex Value="9"/>
         <TopLine Value="1396"/>
         <CursorPos X="59" Y="1420"/>
         <UsageCount Value="23"/>
@@ -105,7 +105,7 @@
       </Unit10>
       <Unit11>
         <Filename Value="..\..\src\mqttconsts.pas"/>
-        <EditorIndex Value="9"/>
+        <EditorIndex Value="8"/>
         <TopLine Value="144"/>
         <CursorPos X="33" Y="148"/>
         <UsageCount Value="19"/>
@@ -113,24 +113,23 @@
       </Unit11>
       <Unit12>
         <Filename Value="..\..\src\mqttsubscriptions.pas"/>
-        <EditorIndex Value="8"/>
+        <EditorIndex Value="7"/>
         <CursorPos X="127" Y="311"/>
         <UsageCount Value="14"/>
         <Loaded Value="True"/>
       </Unit12>
       <Unit13>
         <Filename Value="..\..\src\mqtttokenizer.pas"/>
-        <EditorIndex Value="7"/>
+        <EditorIndex Value="6"/>
         <CursorPos X="84" Y="177"/>
         <UsageCount Value="14"/>
         <Loaded Value="True"/>
       </Unit13>
       <Unit14>
         <Filename Value="..\..\src\mqttpackets.pas"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="4"/>
-        <TopLine Value="624"/>
-        <CursorPos Y="630"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="608"/>
+        <CursorPos X="57" Y="640"/>
         <UsageCount Value="17"/>
         <Loaded Value="True"/>
       </Unit14>
@@ -216,7 +215,7 @@
       </Unit25>
       <Unit26>
         <Filename Value="..\..\src\mqttpacketdefs.pas"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="4"/>
         <TopLine Value="1058"/>
         <CursorPos X="87" Y="1076"/>
         <UsageCount Value="16"/>
@@ -224,7 +223,7 @@
       </Unit26>
       <Unit27>
         <Filename Value="..\..\src\mqttmessages.pas"/>
-        <EditorIndex Value="6"/>
+        <EditorIndex Value="5"/>
         <TopLine Value="111"/>
         <CursorPos Y="129"/>
         <UsageCount Value="14"/>
@@ -256,14 +255,13 @@
       <Unit31>
         <Filename Value="..\..\..\bkutils\buffers.pas"/>
         <UnitName Value="Buffers"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="320"/>
         <CursorPos X="3" Y="67"/>
         <UsageCount Value="11"/>
-        <Loaded Value="True"/>
       </Unit31>
     </Units>
-    <JumpHistory Count="29" HistoryIndex="28">
+    <JumpHistory Count="28" HistoryIndex="27">
       <Position1>
         <Filename Value="..\..\src\mqttclient.pas"/>
         <Caret Line="595" Column="27" TopLine="566"/>
@@ -365,36 +363,21 @@
         <Caret Line="52" Column="35" TopLine="34"/>
       </Position25>
       <Position26>
-        <Filename Value="..\..\..\bkutils\buffers.pas"/>
-        <Caret Line="27" Column="22" TopLine="5"/>
+        <Filename Value="..\..\src\mqttclient.pas"/>
+        <Caret Line="125" Column="20" TopLine="95"/>
       </Position26>
       <Position27>
         <Filename Value="..\..\src\mqttclient.pas"/>
-        <Caret Line="125" Column="20" TopLine="95"/>
+        <Caret Line="626" Column="32" TopLine="615"/>
       </Position27>
       <Position28>
-        <Filename Value="..\..\src\mqttclient.pas"/>
-        <Caret Line="626" Column="32" TopLine="615"/>
-      </Position28>
-      <Position29>
         <Filename Value="..\..\src\mqttpackets.pas"/>
         <Caret Line="132" Column="10" TopLine="114"/>
-      </Position29>
+      </Position28>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes Count="0" ActiveMode="default"/>
     </RunParams>
   </ProjectSession>
-  <Debugging>
-    <BreakPoints Count="1">
-      <Item1>
-        <Kind Value="bpkSource"/>
-        <WatchScope Value="wpsLocal"/>
-        <WatchKind Value="wpkWrite"/>
-        <Source Value="..\..\src\mqttpackets.pas"/>
-        <Line Value="630"/>
-      </Item1>
-    </BreakPoints>
-  </Debugging>
 </CONFIG>
