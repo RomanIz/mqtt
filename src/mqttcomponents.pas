@@ -8,8 +8,9 @@ unit mqttcomponents;
 interface
 
 uses
-  mqttserver, mqttsubscriptions, mqtttokenizer, mqttmessages, mqttclient, 
-  mqttpacketdefs, mqttpackets, mqttconsts, mqttregister, LazarusPackageIntf;
+  mqttserver, mqttsubscriptions, mqtttokenizer, mqttmessages, MQTTClient, 
+  mqttpacketdefs, mqttpackets, mqttconsts, mqttregister, Buffers, Logging, 
+  streamutils, LazarusPackageIntf;
 
 implementation
 

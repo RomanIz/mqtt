@@ -7,6 +7,7 @@
     <CompilerOptions>
       <Version Value="11"/>
       <SearchPaths>
+        <OtherUnitFiles Value="../bkutils"/>
         <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
       </SearchPaths>
       <Parsing>
@@ -41,7 +42,7 @@
     <Description Value="MQTT client and server components that are independent of a specific network technology"/>
     <License Value="CC-BY-SA 4.0"/>
     <Version Minor="9" Release="4" Build="101"/>
-    <Files Count="9">
+    <Files Count="12">
       <Item1>
         <Filename Value="mqttserver.pas"/>
         <UnitName Value="mqttserver"/>
@@ -60,7 +61,7 @@
       </Item4>
       <Item5>
         <Filename Value="mqttclient.pas"/>
-        <UnitName Value="mqttclient"/>
+        <UnitName Value="MQTTClient"/>
       </Item5>
       <Item6>
         <Filename Value="mqttpacketdefs.pas"/>
@@ -79,18 +80,27 @@
         <HasRegisterProc Value="True"/>
         <UnitName Value="mqttregister"/>
       </Item9>
+      <Item10>
+        <Filename Value="../bkutils/buffers.pas"/>
+        <UnitName Value="Buffers"/>
+      </Item10>
+      <Item11>
+        <Filename Value="../bkutils/logging.pas"/>
+        <UnitName Value="Logging"/>
+      </Item11>
+      <Item12>
+        <Filename Value="../bkutils/streamutils.pas"/>
+        <UnitName Value="streamutils"/>
+      </Item12>
     </Files>
     <LazDoc Paths="/home/bkeevil/lazarus/mqtt/doc/fpdoc"/>
-    <RequiredPkgs Count="3">
+    <RequiredPkgs Count="2">
       <Item1>
         <PackageName Value="LCL"/>
       </Item1>
       <Item2>
         <PackageName Value="LazUtils"/>
       </Item2>
-      <Item3>
-        <PackageName Value="bkutils"/>
-      </Item3>
     </RequiredPkgs>
     <UsageOptions>
       <UnitPath Value="$(PkgOutDir)"/>

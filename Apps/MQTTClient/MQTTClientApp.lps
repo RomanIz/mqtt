@@ -20,7 +20,7 @@
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <CursorPos X="21" Y="286"/>
+        <CursorPos X="20" Y="9"/>
         <UsageCount Value="70"/>
         <Bookmarks Count="1">
           <Item0 X="9" Y="370" ID="1"/>
