@@ -152,7 +152,7 @@ begin
       Client.KeepAlive           := MQTTConnectDlg.edKeepAlive.Value;
       Client.WillMessage.Enabled := MQTTConnectDlg.cbWillMessageEnabled.Checked;
       Client.WillMessage.Topic   := MQTTConnectDlg.edTopic.Text;
-      Client.WillMessage.Message := MQTTConnectDlg.edMessage.Text;
+      //Client.WillMessage.Message := MQTTConnectDlg.edMessage.Text;
       Client.WillMessage.QOS     := TMQTTQOSType(MQTTConnectDlg.cbQOS.ItemIndex);
       Client.WillMessage.Retain  := MQTTConnectDlg.cbRetain.Checked;
 
@@ -236,6 +236,8 @@ var
   Sent,Size: Integer;
 begin
   Size := Client.SendBuffer.Size;
+  if Size <= 0 then
+    exit; //==>>
   GetMem(Data,Size);
   try
     Client.SendBuffer.Peek(Data,Size);

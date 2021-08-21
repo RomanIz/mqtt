@@ -330,7 +330,7 @@ begin
   FPingIntRemaining       := FPingInterval;
   FCleanSession           := True;
   FThread                 := TMQTTClientThread.Create(False);
-  FThread.FreeOnTerminate := True;
+  FThread.FreeOnTerminate := False;//True;
   FThread.FClient         := Self;
 end;
 
